@@ -1,3 +1,5 @@
+
+import java.util.Scanner;
 public class ControlFlowExercises {
     public static void main(String[] args) {
 
@@ -128,12 +130,12 @@ public class ControlFlowExercises {
 
 
     // FIZZBUZZ
-        int n = 100;
+//        int n = 100;
         // loop for 100 times
 
 //        for (int f = 1; f<=n; f++){
 //
 //        }
 
-    }
-}
+//    }
+//}
