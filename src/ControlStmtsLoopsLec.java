@@ -95,11 +95,11 @@ public class ControlStmtsLoopsLec {
 
         //While
 //
-//        int i = 0;
-//        while(i <= 10){
-//            System.out.println("i is "+ i);
-//            i++;
-//        }
+        int i = 0;
+        while(i <= 10){
+            System.out.println("i is "+ i);
+            i++;
+        }
 
 
 
@@ -119,19 +119,25 @@ public class ControlStmtsLoopsLec {
 //        boolean newsletterSignup = true;
 //        Scanner scanner = new Scanner(System.in);
 //
+
+
+        // Do-while
+//
+//        boolean newsLetterSignUp;
+//        Scanner scanner = new Scanner(System.in);
+//
 //        do {
-//            System.out.println("Are you ready to sign up for are news letter? Only yes or no will work.");
+//            System.out.println("Are you ready to sign up for our newsletter? Note: only 'yes' will work :)");
 //            String userInput = scanner.nextLine();
 //
-//            if(userInput.equalsIgnoreCase("yes")){
-//                System.out.println("We are happy you want to sign up for the news letter!");
-//                newsletterSignup = false;
+//            if (userInput.equalsIgnoreCase("yes")) {
+//                System.out.println("We are so happy to hear you are interested in our newsletter! Thank you for signing up!");
+//                newsLetterSignUp = false;
 //            } else {
-//                System.out.println("Boo we are not happy that you don't want to sign up!");
-//                newsletterSignup = true;
+//                System.out.println("I'm sorry . . that's an unacceptable answer.");
+//                newsLetterSignUp = true;
 //            }
-//
-//        } while (newsletterSignup);
+//        } while (newsLetterSignUp);
 
 
 
@@ -149,14 +155,32 @@ public class ControlStmtsLoopsLec {
 //            System.out.println("Here's a fruit: " + fruits[i]);
 //        }
 
+        //        for (int i = 1; i < 100; i++) {
+//            System.out.println(i);
+//            if (i == 7) {
+//                System.out.println("Woops - hit the stopping point!");
+//                break;
+//            }
+//        }
 
-        for(int i = 7)
+
+//        for(int i = 7);
 
 
+        // Continue:
+        // Goal: Skipping odd numbers, print even numbers
 
-        //.soutv shortcut for printing
+        for (int i2 = 1; i2 <= 10; i2++) {
+            if (i2 % 2 == 1) {
+                System.out.println("Odd number - get outta here!");
+                continue;
+            }
+            System.out.println("Here's an even number: " + i);
 
 
+            //.soutv shortcut for printing
 
+
+        }
     }
 }
