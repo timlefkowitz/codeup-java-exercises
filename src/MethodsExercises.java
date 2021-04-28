@@ -32,10 +32,10 @@ public class MethodsExercises {
         return result;
     }
 
-    public static int getUsernum(int usernum){
-        System.out.println("Guess a number from 1 to 100 ");
-        Scanner usernum = new Scanner(System.in);
-    }
+//    public static int getUsernum(int usernum){
+//        System.out.println("Guess a number from 1 to 100 ");
+////        Scanner usernum = new Scanner(System.in);
+//    }
 
 //    public static int getInteger(int min, int max) {
 //        Scanner integerscan = new Scanner(System.in);
