@@ -6,7 +6,7 @@ public class ConsoleExercises {
 
 
         double pi = 3.14159;
-        System.out.format("The value of pi is approximately " + pi);
+        System.out.format("The value of pi is approximately " + pi+"\n");
 //        System.out.println("The value of pi is approximately "+ pi);
 
 
@@ -31,7 +31,7 @@ public class ConsoleExercises {
 //        String something = sc.nextLine();
 //        System.out.println("You entered:");
 //        System.out.println(something);
-
+//
 
 
         //4

@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class MethodsLecture {
     public static void main(String[] args) {
         System.out.println("Hello, Methods");
@@ -46,6 +48,7 @@ public class MethodsLecture {
     // Recursion
 
     public static void countToLoop(int num){
+
         for (int i = 0; i <= num; i++){
             System.out.println(i);
         }
