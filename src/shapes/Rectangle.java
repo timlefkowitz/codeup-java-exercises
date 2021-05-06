@@ -4,21 +4,34 @@ import java.util.Scanner;
 
 
 public class Rectangle {
-    public static void main(String[] args){
-     Scanner sc = new Scanner(System.in);
+        protected int leng;
+        protected int width;
 
-        System.out.println("Enter the Length");
-        int Length = sc.nextInt();
+        public Rectangle(int length, int width) {
+            this.leng = length;
+            this.width = width;
+        }
 
-        System.out.println("Enter the Width");
-        int Width = sc.nextInt();
+        public int getArea(){
+            return leng * width;
+        }
 
-        int getPerimeter = 2 * Length + 2 * Width;
-        int getArea = Length * Width;
+        public int getPerimeter(){
+            return 2 * leng + 2 * width;
+        }
 
-        System.out.println("Your perimeter is " + getPerimeter + " and your area is " + getArea);
+//        System.out.println("Enter the Length");
+//        int Length = sc.nextInt();
+//
+//        System.out.println("Enter the Width");
+//        int Width = sc.nextInt();
+//
+//        int getPerimeter = 2 * Length + 2 * Width;
+//        int getArea = Length * Width;
+//
+//        System.out.println("Your perimeter is " + getPerimeter + " and your area is " + getArea);
 
-    }
+
 }
 
 
