@@ -6,6 +6,7 @@ public class person {
         private int age;
         private int weight;
         private int salary;
+        private int gadgets;
 
 
         public person(String name, int age, int weight, int salary){
@@ -13,6 +14,7 @@ public class person {
             this.age = age;
             this.weight =weight;
             this.salary = salary;
+            this.gadgets = gadgets;
         }
 
 
@@ -23,6 +25,10 @@ public class person {
 
     public person(String name) {
             this.name = name;
+    }
+
+    public person(String shermz, String synth) {
+
     }
 
 
@@ -51,6 +57,10 @@ public class person {
 
     public int getWeight() {
         return this.weight;
+    }
+
+    public int getGadgets(){
+            return this.gadgets;
     }
 
     //            public void sayHello () {
