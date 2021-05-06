@@ -2,7 +2,7 @@ package movies;
 
 public class Movie {
     private String name;
-    private String category:
+    private String category;
 
     public Movie(String movieName, String movieCategory){
         this.name = movieName;
