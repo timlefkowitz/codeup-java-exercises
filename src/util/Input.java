@@ -1,25 +1,32 @@
 package util;
 import java.util.Scanner;
 
-
 public class Input {
-    Scanner sc = new Scanner(System.in);
+    private Scanner scanner;
 
-    public static void main(String[] args){
-
+    public Input(){
+        this.scanner = new Scanner(System.in);
     }
+
+
 
     public String getString(){
-
-        System.out.println("Please input any random string please!");
-        return sc.next();
+        System.out.println("Enter a string: ");
+        return scanner.nextLine();
     }
 
-    public boolean yesOrNo(){
-        System.out.println("Please input a variant of yes.");
-        String userInput = sc.next();
-        return userInput.equalsIgnoreCase("y") || userInput.equalsIgnoreCase("yes") || userInput.equalsIgnoreCase("yeah");
+    public int getInt(int min, int max){
+        int input;
+        while (true){
+            System.out.printf("Enter an integer between %d and %d: ", min, max );
+            input = scanner.nextInt();
+            if (input >= min && input <= max){
+                return input;
+            }
+        }
     }
+
+
 
     public int getInt(){
         int input;
@@ -34,6 +41,9 @@ public class Input {
             }
         }
     }
+
+
+
     public double getDouble(double min, double max){
         double input;
         while (true){
@@ -57,4 +67,14 @@ public class Input {
             }
         }
     }
+
+
+
+    public boolean yesNo(){
+        System.out.println("Yes or no?");
+        String input = scanner.next();
+        return input.equalsIgnoreCase("Yes") || input.equalsIgnoreCase("Y");
+    }
+
+
 }
