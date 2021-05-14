@@ -14,11 +14,11 @@ public class ArraysExercises {
 
         String[] persons = new String[5];
 
-        person shermz = new person("Shermz","Synth");
-        person kai = new person("kai", "Boom");
-        person dani = new person("dani", "campbell");
-        person kenneth = new person("kenneth", "howl");
-        person paige = new person("paige", "lefkowitz");
+        Person shermz = new Person("Shermz","Synth");
+        Person kai = new Person("kai", "Boom");
+        Person dani = new Person("dani", "campbell");
+        Person kenneth = new Person("kenneth", "howl");
+        Person paige = new Person("paige", "lefkowitz");
 
 //        persons[0] = shermz.firstName;
 //        persons[1] = kai.firstName;

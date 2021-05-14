@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class person {
+public class Person {
 
         private String name;
         private int age;
@@ -9,7 +9,7 @@ public class person {
         private int gadgets;
 
 
-        public person(String name, int age, int weight, int salary){
+        public Person(String name, int age, int weight, int salary){
             this.name = name;
             this.age = age;
             this.weight =weight;
@@ -19,15 +19,15 @@ public class person {
 
 
 
-    public person() {
+    public Person() {
 
     }
 
-    public person(String name) {
+    public Person(String name) {
             this.name = name;
     }
 
-    public person(String shermz, String synth) {
+    public Person(String shermz, String synth) {
 
     }
 
@@ -70,7 +70,7 @@ public class person {
 
     public static void main(String[] args) {
         // blueprint = class of person [come back later and make your classes uppercase!]
-        person tim = new person();
+        Person tim = new Person();
         //The above could remind you of another thing we've done:
         //Scanner scannername = new Scanner [we've used the Scanner constructor before]
 
@@ -81,14 +81,14 @@ public class person {
         tim.setAge(32);
         System.out.println("tim.getAge() = " + tim.getAge());
 
-        person Timothy = new person("Timothy", 21, 180, 300000);
+        Person Timothy = new Person("Timothy", 21, 180, 300000);
         System.out.println("Timothy.getName() = " + Timothy.getName());
         System.out.println("Timothy.getAge() = " + Timothy.getAge());
         System.out.println("Timothy.getWeight() = " + Timothy.getWeight());
         System.out.println("Timothy.getSalary() = " + Timothy.getSalary());
 
         //visibility
-        person douglas = new person();
+        Person douglas = new Person();
         douglas.name = "douglas";
 
         Scanner scanner = new Scanner(System.in);
@@ -96,7 +96,7 @@ public class person {
         String response = scanner.nextLine();
 
 
-        person user = new person(response);
+        Person user = new Person(response);
 
         System.out.println("user.getName() = " + user.getName());
 
