@@ -2,11 +2,15 @@ import java.util.Scanner;
 
 public class Person {
 
-        private String name;
+//    private final String firstName;
+//    private final String lastName;
+    private String name;
         private int age;
         private int weight;
         private int salary;
-        private int gadgets;
+        private String gadgets;
+        String firstName;
+        String lastName;
 
 
         public Person(String name, int age, int weight, int salary){
@@ -24,10 +28,13 @@ public class Person {
     }
 
     public Person(String name) {
+
             this.name = name;
     }
 
-    public Person(String shermz, String synth) {
+    public Person(String firstName, String lastName) {
+            this.firstName = firstName;
+            this.lastName = lastName;
 
     }
 
@@ -60,7 +67,7 @@ public class Person {
     }
 
     public int getGadgets(){
-            return this.gadgets;
+            return this.getGadgets();
     }
 
     //            public void sayHello () {

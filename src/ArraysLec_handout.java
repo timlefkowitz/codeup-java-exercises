@@ -4,7 +4,15 @@ public class ArraysLec_handout {
 
     public static void main(String[] args) {
 
+        double[] prices = new double[4];
+//        double[] basket = new double[5];
+
         String[] languages = {"html", "css", "javascript", "java"};
+        String[] basket = {"apple", "LasEr CaNoN","Sword of Thimes","Energy Charge","Sheild of Orian"};
+
+        for (int i = 0; i < basket.length; i+=1){
+            System.out.println(basket[i]);
+        }
 
         for (int i = 0; i < languages.length; i += 1){
             System.out.println(languages[i]);
@@ -20,10 +28,13 @@ public class ArraysLec_handout {
 
         //TODO Together: Let's set up our first array - an array of prices with a double datatype.
 
-        double[] prices = new double[4];
+
+
 
         System.out.println("prices[0] = " + prices[0]);
         System.out.println("prices[0] = " + prices[1]);
+
+
 
         //TODO Together: Nice! So, we can set up an array with a literal (prices = new double[4], diceSides = new int[6], groceryList = new String[10]), but that's not all. We can also use a constant or variable!
 
@@ -122,17 +133,28 @@ public class ArraysLec_handout {
         System.out.println(Arrays.toString(cohorts));
 
 
+//        String[] basket = {"apple", "LasEr CaNoN","Sword of Thimes","Energy Charge","Sheild of Orian"};
+//        double[] prices = new double[4];
+//
+//        String[] cohortNameString = new String[2];
+//        String[] cohortNameString = {"Marco", "Mars", "MadMax"};
 
         //~*~ More Array.methods() ~*~
 
         //Arrays.toString(arr) = returns a String representation of the array including the brackets
         //TODO Together: We have an array of Cohorts in this file - let's stringify that array.
 
-//        cohortNameString = Arrays.toString(cohorts).replace("[", "").replace("]","");
+        String cohortNameString = Arrays.toString(cohorts).replace("[", "").replace("]", "");
+
+        System.out.println("THIS IS WHAT IM LOOKING FOR "+cohortNameString);
+
 
         //TODO Together: We do get the brackets back with the method, but let's solve that with a little method chain-chain-chain as an example of what you could do:
+//        Arrays.sort(arr) - Sort elements of array into ascending order
+//        String cohortsort = Arrays.sort(cohorts);
 
-        //Arrays.sort(arr) - Sort elements of array into ascending order
+        System.out.println("using sort method "+ cohortNameString);
+
         //TODO Together: Hey, Oberon and Neptune are out of line in our array - .sort might help us out there!
 
         //Arrays.binarySearch(array, value) = returns int index of value when found, negative number when not found

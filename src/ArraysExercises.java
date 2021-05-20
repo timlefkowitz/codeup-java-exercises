@@ -18,15 +18,13 @@ public class ArraysExercises {
         Person kai = new Person("kai", "Boom");
         Person dani = new Person("dani", "campbell");
         Person kenneth = new Person("kenneth", "howl");
-        Person paige = new Person("paige", "lefkowitz");
 
-//        persons[0] = shermz.firstName;
-//        persons[1] = kai.firstName;
-//        persons[2] = dani.firstName;
-//        persons[3] = kenneth.firstName;
-//        persons[4] = paige.firstName;
+        persons[0] = shermz.firstName;
+        persons[1] = kai.firstName;
+        persons[2] = dani.firstName;
+        persons[3] = kenneth.firstName;
 
-        System.out.print("Persons[0] = " + persons[0] + " Persons[1] = " + persons[1] + " Persons[2] = " + persons[2]  + " Persons[3] = " + persons[3]  + " Persons[4] = " + persons[4]);
+        System.out.print("\nPersons[0] = " + persons[0] + " Persons[1] = " + persons[1] + " Persons[2] = " + persons[2]  + " Persons[3] = " + persons[3]  + " Persons[4] = " + persons[4]);
 
 
 
